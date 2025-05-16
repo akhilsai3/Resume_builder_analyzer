@@ -174,50 +174,18 @@
 
 @media screen and (max-width: 768px) {
   .box-container {
-    min-height: 80vh;
-  }
-  
-  .img-container {
-    position: relative;
-  }
-  
-  .image-style-1,
-  .image-style-2,
-  .image-style-3 {
-    width: 80%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 50%;
-    transform: rotate(-15deg);
-    z-index: -100;
-    margin: 20px auto;
-    position: relative;
-    display: block;
-  }
-
-  .image-container-1,
-  .image-container-2,
-  .image-container-3 {
-    position: relative;
-    transform: none;
-    margin: 30px auto;
-    animation: none;
+    padding: 10px;
   }
   
   .overlay-text {
-    position: relative;
-    transform: none;
-    top: auto;
-    left: auto;
-    padding: 40px 20px;
+    padding: 20px 10px;
+    min-height: calc(100vh - 40px);
   }
   
-  .overlay-text h1 {
-    font-size: 2.2rem;
-  }
-  
-  .overlay-text p {
-    font-size: 1.1rem;
+  .image-container-1,
+  .image-container-2,
+  .image-container-3 {
+    display: none; /* Hide background images on small screens if they're causing issues */
   }
 }
 
