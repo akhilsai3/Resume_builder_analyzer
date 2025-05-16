@@ -22,10 +22,10 @@ const userSchema = new mongoose.Schema({
                 password.startsWith('$2y$')) {
                 return password;
             }
-            console.log('Raw password received:', password);
+            //console.log('Raw password received:', password);
             const salt = bcrypt.genSaltSync(10);
             const hashed=bcrypt.hashSync(password, salt);
-            console.log('Hashed password:', hashed);
+            //console.log('Hashed password:', hashed);
             return hashed;
         }
     },
