@@ -98,8 +98,9 @@ export default function LandingPage() {
         navigate('/profile');
     };
     const handleAnalyzeResume = () => {
-    window.location.href = 'https://ats-insight-6wqfhbfhpd9q2thbkz5we2.streamlit.app/';
-};
+        // Open your Streamlit app in a new tab
+        window.open('https://ats-insight-6wqfhbfhpd9q2thbkz5we2.streamlit.app/', '_blank');
+    };
 
 
     return (
